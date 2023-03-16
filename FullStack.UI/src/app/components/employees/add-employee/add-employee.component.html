@@ -2,7 +2,7 @@
     <h1 class="mb-3 mt-2">Add New Employee</h1>
     <div class="row">
         <div class="col-6">
-            <form #form="ngForm" (ngSubmit)="addEmployee">
+            <form #form="ngForm" (ngSubmit)="addEmployee()">
                 <div class="mb-3">
                     <label for="firstName" class="form-label">First Name</label>
                     <input type="text" class="form-control" id="firstName" name="firstName" [(ngModel)] = "addEmployeeRequest.firstName" >
@@ -27,8 +27,7 @@
                     <label for="department" class="form-label">Department</label>
                     <input type="text" class="form-control" id="department" name="department" [(ngModel)] = "addEmployeeRequest.department">
                 </div>
-
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary">Save</button>
             </form>
         </div>
     </div>
